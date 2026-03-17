@@ -1,0 +1,2 @@
+# No external dependencies required
+# Model uses pure Python implementation for AWS Lambda compatibility
