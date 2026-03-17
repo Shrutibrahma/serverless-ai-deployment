@@ -334,7 +334,7 @@
 
     <script>
         // UPDATE THIS URL after deploying your Lambda + API Gateway
-        const API_URL = 'https://YOUR_API_GATEWAY_URL/predict';
+        const API_URL = 'https://sk7217p7t1.execute-api.us-east-1.amazonaws.com/predict';
 
         // Check API status on page load
         window.onload = function() {
@@ -345,7 +345,7 @@
             const statusEl = document.getElementById('apiStatus');
             const statusText = document.getElementById('apiStatusText');
 
-            if (API_URL.includes('YOUR_API_GATEWAY_URL')) {
+            if (API_URL.includes('sk7217p7t1.execute-api.us-east-1.amazonaws.com')) {
                 statusEl.className = 'api-status api-offline';
                 statusText.textContent = 'API: Not configured - update API_URL in code';
                 return;
@@ -395,7 +395,7 @@
             document.getElementById('loading').classList.add('show');
 
             // Check if API is configured
-            if (API_URL.includes('YOUR_API_GATEWAY_URL')) {
+            if (API_URL.includes('sk7217p7t1.execute-api.us-east-1.amazonaws.com')) {
                 document.getElementById('loading').classList.remove('show');
                 showError('API not configured. Please update the API_URL in the JavaScript code with your API Gateway URL.');
                 return;
